@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+      $("img").click(function () {
+        var img = $("#vehicle");
+        img.animate({top: '-400px' }, "slow");
+        img.animate({top: '-350px' }, "slow");
+        img.animate({top: '-200px' }, "slow");
+        img.animate({top: '-100px' }, "slow");
+        img.animate({top: '-50px' }, "slow");
+        img.animate({height: '300px'}, "slow");
+        img.animate({left: '100px' }, "slow");
+        img.animate({top: '-100px' }, "slow");
+        img.animate({left: '200px' }, "slow");
+        img.animate({top: '-200px' }, "slow");
+        img.animate({left: '200px' }, "slow");
+        img.animate({top: '-400px' }, "slow");
+        img.animate({left: '4000px' }, "fast");
+         });
+    });
+    </script>
+</head>
+<body>
+    <div class="spa">
+        <img style="width: 2000px;" src="assests/space2.avif">
+        <img style="margin-top: -600px;position: relative;" src="assests/spacevehicle.png"id="vehicle">
+    </div>
+  
+  
+</body>
+</html>
