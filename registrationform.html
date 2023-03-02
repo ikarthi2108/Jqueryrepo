@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>$(document).ready(function(){
+        $('#register-form').click(function(){
+           $ ('#Reg-form').toggle();
+        });
+        });
+        
+        </script>
+</head>
+<body>
+    <button id="register-form">Register</button><br><br>
+    <form id="Reg-form">
+        <label for="fullname">Full name</label><br>
+        <input type="text" id="fullname" placeholder="Enter your full name"><br>
+        <label for="number">Phone numbe</label><br>
+        <input type="number" id="number" placeholder="Enter your phone number"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" placeholder="Enter your password"><br>
+        <label for="confirmpassword">Password</label><br>
+        <input type="password" id="confirmpassword" placeholder="confirm password"><br>
+        <label>Select your dob</label><br>
+        <input type="date" id="dob" placeholder="date of birth"><br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
