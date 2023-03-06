@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://code.jquery.com/ui/1.10.4/themes/Blitzer/jquery-ui.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+      $(function () {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        });
+    $(document).ready(function () {
+      $("#click").click(function () {
+        $("#mob").append("<img src='assests/mobile3.jfif'>");
+      })
+    })
+    $(document).ready(function () {
+      $("#click1").click(function () {
+        $("#lap").prepend("<img src='assests/lap3.png'>");
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <button id="click">click to add mobile</button>
+  <button id="click1">click to add lap</button>
+  <br><br>
+  <div id="accordion">
+    <h3>Mobile</h3>
+    <div>
+        <p id="mob">
+            <img src="assests/mobile1.png" style="height: 150px;width: 150px;">
+            <img src="assests/mobile2.jfif" style="height: 150px;width: 150px;">
+        </p>
+    </div>
+    <h3>Laptop</h3>
+    <div>
+        <p id="lap">
+            <img src="assests/lap1.png" style="height: 150px;width: 150px;">
+            <img src="assests/lap2.jfif" style="height: 150px;width: 150px;">
+        </p>
+    </div>
+   
+</div>
+</body>
+
+</html>
