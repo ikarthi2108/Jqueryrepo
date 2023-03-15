@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#validationform").validate({
+                rules: {
+                    'un': {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 20
+                    },
+                    'pw': {
+                        required: true,
+                    },
+                    'mail': {
+                        required: true,
+                        email: true,
+                    },
+                    'mob': {
+                        required: true,
+                        
+                    },
+                },
+                messages: {
+                    'un': "Enter a valid User Name.",
+                    'pw': "Enter valid Password",
+                    'mail': "Enter valid Email.",
+                    'mob': "Enter valid mobile number",
+                    
+                }
+            });
+        });
+    </script>
+   <style>
+     body{
+        background-image: url(assests/bg7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+     }
+     form{
+        text-align: center;
+        margin-right: 200px;
+     }
+     
+    </style>
+   
+</head>
+
+<body>
+
+    <h2 style="margin-left:570px;margin-top: 300px;">Validation Form</h2>
+    <form action=""  method="post" id="validationform">
+       
+       
+            <label>User Name :</label>
+            <input type="text" name="un" placeholder=" enter username">
+            <br><br>
+            <label>Password :</label>
+            <input type="password" name="pw" placeholder="enter  password">
+            <br><br>
+            <label> E-Mail :</label>
+            <input type="email" name="mail" placeholder="enter email id">
+            <br><br>
+            <label> Mobile :</label>
+            <input type="tel" name="mob" placeholder="enter mobile number">
+            <br><br>
+            <input type="submit"  value="Sign In">
+            <input type="reset" value="Cancel" class="button">
+        
+    </form>
+</body>
+</html>
